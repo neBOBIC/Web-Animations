@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        #one, #two, #three, #four{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            
+        }
+
+        #one{
+            background-color: red;
+            animation-delay: 0s;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            animation: first 2s ease-in-out infinite;
+        }
+
+        #two{
+            background-color: aqua;
+            animation-delay: 0s;
+            border-radius: 0%;
+            animation: second 2s ease-in-out infinite;
+        }
+
+        #three{
+            background-color: violet;
+            animation-delay: 0s;
+            border-radius: 50%;
+            animation: third 2s ease-in-out infinite;
+        }
+
+        #four{
+            background-color: brown;
+            animation-delay: 0s;
+            border-radius: 0%;
+            animation: forth 2s ease-in-out infinite;
+        }
+
+        @keyframes first{
+            0%{left: 0px; top:0px; width: 150px; height: 150px;}
+            25%{left: 250px; top: 0px; border-radius: 0%; width: 100px; height: 100px;}
+            50%{left: 250px; top: 250px; border-radius: 50%; width: 150px; height: 150px;}
+            75%{left: 0px; top: 250px; border-radius: 0%; width: 100px; height: 100px;}
+            100%{left: 0px; top: 0px; border: 50%; width: 150px; height: 150px;}
+
+        }
+
+        @keyframes second{
+            0%{left: 250px; top: 0px; width: 100px; height: 100px;}
+            25%{left: 250px; top: 250px; border-radius: 50%; width: 150px; height: 150px}
+            50%{left: 0px; top: 250px; border-radius: 0%; width: 100px; height: 100px;}
+            75%{left: 0px; top: 0px; border-radius: 50%;  width: 150px; height: 150px}
+            100%{left: 250px; top: 0px; border-radius: 0%; width: 100px; height: 100px;}
+        }
+
+        @keyframes third{
+            0%{left: 250px; top: 250px; width: 150px; height: 150px; border-radius: 50%;}
+            25%{left: 0px; top: 250px; border-radius: 0%; width: 100px; height: 100px}
+            50%{left: 0px; top: 0px; border-radius: 50%; width: 150px; height: 150px;}
+            75%{left: 250px; top: 0px; border-radius: 0%;  width: 100px; height: 100px}
+            100%{left: 250px; top: 250px; border-radius: 50%; width: 150px; height: 150px;}
+        }
+
+        @keyframes forth{
+            0%{left: 0px; top: 250px; width: 100px; height: 100px; border-radius: 0%;}
+            25%{left: 0px; top: 0px; border-radius: 50%; width: 150px; height: 150px}
+            50%{left: 250px; top: 0px; border-radius: 0%; width: 100px; height: 100px;}
+            75%{left: 250px; top: 250px; border-radius: 50%;  width: 150px; height: 150px}
+            100%{left: 0px; top: 250px; border-radius: 0%; width: 100px; height: 100px;}
+        }
+        
+        .container{
+            position: absolute;
+            left: 35%;
+            top: 20%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    <div id="four"></div>
+    </div>
+</body>
+</html>

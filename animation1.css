@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: Montserrat;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#triangle-topright {
+      width: 0;
+      height: 0;
+      border-top: 100px solid red;
+      border-left: 100px solid transparent;
+      position: relative;
+      animation-name: triangle;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+
+@keyframes triangle {
+    0% {
+        border-top-color: pink;
+        top: 0px;
+        left: 0px;
+    }
+
+    25% {
+        border-top: 200px solid blue;
+        border-left: 200px solid transparent;
+        top: 0px;
+        left: 250px;
+    }
+
+    50% {
+        border-top-color: cadetblue;
+        border-left: 300px solid transparent;
+        top: 250px;
+        left: 250px;
+    }
+
+    75% {
+        border-top: 200px solid green;
+        top: 250px;
+        left: 0px;
+    }
+
+    100% {
+        border-top-color: violet;
+        top: 0;
+        left: 0px;
+    }
+}
