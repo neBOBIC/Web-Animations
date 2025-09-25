@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    border: 5px red;
+}
+
+section{
+    height: 100vh;
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+h1{
+    text-align: center;
+    padding: 20px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    width: 400px;
+    height: 520px;
+    perspective: 1000px;
+}
+
+.container:hover .card{
+    transform: rotateY(180deg);
+}
+
+.card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.back, .front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    margin-top: 30px;
+    border-radius: 3%;
+    border: 3px solid #11998e;
+}
+
+.back{
+    transform: rotateY(180deg);
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p{
+    padding: 10px;
+}
+
+.socials img{
+    width: 40px;
+    height: 40px;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
