@@ -11,14 +11,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f0f0f0;
   overflow: hidden;
 }
 
 .square {
   width: 150px;
   height: 150px;
-  background-color: #7a5fd3;
+  background-color: violet;
   position: relative;
   animation: move 2.5s ease-in-out infinite; 
   border-radius: 0;
@@ -37,7 +36,6 @@ body {
   animation: shadowRight 2.5s ease-in-out infinite;
 }
 
-/* shadow când cubul merge spre dreapta (în stânga cubului) */
 .square::before {
   content: "";
   position: absolute;
