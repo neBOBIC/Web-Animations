@@ -1,18 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laborator 5</title>
-    <link rel="stylesheet" href="Lab5.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pătrat cu shadow realist</title>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  overflow: hidden;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  background-color: #7a5fd3;
+  position: relative;
+  animation: move 2.5s ease-in-out infinite; 
+  border-radius: 0;
+}
+
+
+.square::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to right, rgba(122,95,211,0.5), rgba(122,95,211,0));
+  transform-origin: left center;
+  animation: shadowRight 2.5s ease-in-out infinite;
+}
+
+/* shadow când cubul merge spre dreapta (în stânga cubului) */
+.square::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to left, rgba(122,95,211,0.5), rgba(122,95,211,0));
+  transform-origin: right center;
+  animation: shadowLeft 2.5s ease-in-out infinite;
+}
+
+
+@keyframes move {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(-500px); }
+  100% { transform: translateX(0); }
+}
+
+
+@keyframes shadowRight {
+  0%   { width: 0; opacity: 0; }
+  10%  { width: 200px; opacity: 0.6; }
+  25%  { width: 350px; opacity: 0.8; } 
+  50%  { width: 0; opacity: 0; }
+  100% { width: 0; opacity: 0; }
+}
+
+@keyframes shadowLeft {
+  0%   { width: 0; opacity: 0; }
+  50%  { width: 0; opacity: 0; }
+  60%  { width: 200px; opacity: 0.6; }
+  75%  { width: 350px; opacity: 0.8; }
+  100% { width: 0; opacity: 0; }
+}
+</style>
 </head>
-<body>        
-        <div class="loader">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+<body>
+  <div class="square"></div>
 </body>
 </html>
