@@ -1,0 +1,1028 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    display: flex;
+    height: 98vh;
+    justify-content: center;
+}
+
+.menu::before {
+    background-image: url(img/back.png);
+    background-size: cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98vh;
+    opacity: 1;
+    z-index: -1;
+    background-color: black;
+}
+
+.container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo-name{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+}
+
+.list{
+    display: flex;
+    gap: 40px;
+}
+
+.list li{
+    list-style: none;
+}
+
+.list a{
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.socials-icons{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 1;
+    color: white;
+}
+
+.text{
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 10px;
+        color: white;
+}
+
+.button a{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.button button{
+    border: 1px solid #A8FF35;
+    border-radius: 30px;
+    background-color: #A8FF35;
+    width: 130px;
+    height: 40px;
+    box-shadow: 0px 0px 30px 0px #3dc21b;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.arrow{
+    position: absolute;
+    top: 53%;
+    left: 56%;
+}
+
+.arrow p{
+    font-family: BIZ UDGothic;
+    font-size: 12px;
+    transform: rotate(20deg);
+    color: #ffff;
+}
+
+.frames{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 150px;
+}
+
+.frames p{
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 300;
+    color: white;
+}
+
+.adobe{
+    width: 40px;
+}
+
+.x{
+    width: 17px;
+}
+
+.middle-frame .adobe{
+    width: 45px;
+}
+
+.frame1, .frame2, .frame3{
+    width: 300px;
+    height: 60px;
+    background-color: #181818;
+    filter: drop-shadow(7px 6px 5px #000000);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title{
+    padding-top: 60px;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    height: 110vh;
+}
+
+.socials .container{
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main-text{
+    margin-top: 110px;
+}
+
+.main-text h2{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.social-frame{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.me{
+    margin-top: 25px;
+    margin-bottom: 63px;
+}
+
+.me, .social-subtext{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.right-image img{
+    width: 650px;
+}
+
+.media img{
+    vertical-align: middle;
+    width: 51px;
+    height: 51px;
+}
+
+.social-paragraph{
+    display: flex;
+}
+
+.media .social-title{
+    font-family: Montserrat;
+    font-size: 38px;
+    font-weight: 600;
+    margin-left: 5%;
+}
+
+.social-subtext{
+    margin-top: 0 !important;
+    margin-left: 17%;
+    margin-bottom: 10px;
+}
+
+.program{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.white-blocks{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.content h2{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 68px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.block{
+    box-shadow: 0px 0px 20px 4px #eeeeee;
+    border-radius: 16px;
+    width: 25%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.block:hover{
+    transition: all 2s ease;
+    transform: scale(1.1) !important;
+    box-shadow: 0 8px 32px 0 #333;
+}
+
+.block h3{
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.block .img1, .img2, .img3{
+    width: 90%;
+}
+
+.block .p1, .p2, .p3{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    background-image: url(img/background2.png);
+    background-color: #000000;
+    background-size: cover;
+    height: 140vh;
+}
+
+.price h2{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 68px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.price .container{
+    justify-content: flex-start;
+    gap: 80px;
+}
+
+.price .price-frames{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.price-frame{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 25%;
+    height: 102%;
+    border-radius: 16px;
+}
+
+.price-frame:hover{
+    transform: scale(1.05) !important;
+    transition: all 0.5s ease;
+    box-shadow: 0 8px 32px 0 #333;
+}
+
+.frame-title{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+.frame-subtitle{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 18px;
+    padding-left: 30px;
+}
+
+hr{
+    border: 2px solid #b9b2b2;
+    width: 67%;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.frame-price{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 35px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.block-list li {
+    display: flex;
+    align-items: flex-start;
+    list-style: none;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+.block-list li img {
+    padding: 10px;
+}
+
+.block-list li p {
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.buy{
+    background-color:#a7ff35;
+    border-radius:29px;
+    border: 1px solid #a7ff35;
+    width: 250px;
+    height: 50px;
+}
+
+.button-buy{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.buy a{
+color: #000000;
+font-size: 16px;
+font-weight: bold;
+text-decoration: none;
+}
+
+.block-img1, .block-img2{
+    position: absolute;
+    z-index: 99999;
+}
+
+.block-img1{
+    width: 25%;
+    left: 0%;
+    top: 405%;
+}
+
+.block-img2{
+    width: 30%;
+    left: 59.1%;
+    top: 307%;
+}
+
+.price .container{
+    gap: 20px;
+}
+
+.footer{
+    height: 60vh;
+    background-image: url(img/background3.png);
+    background-size: cover;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .container{
+    justify-content: center;
+    gap: 75px;
+}
+
+.footer h2{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-images{
+    width: 110px;
+    height: 110px;
+    border-radius: 16px;
+    margin-left: 20px;
+    background: rgba(24, 24, 24, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-image1 img{
+    width: 60px;
+    filter: drop-shadow(2px 7px 8px #1877F2);
+}
+
+.f-image2 img{
+    width: 60px;
+    filter: drop-shadow(0px 7px 8px #FFDD55);
+}
+
+.f-image3 img{
+    filter: drop-shadow(0px 7px 8px #0A66C2);
+}
+
+.f-image4 img{
+    filter: drop-shadow(0px 7px 8px #1D9BF0);
+}
+
+/* === ANIMATION STYLES === */
+
+/* 1. HOVER SCALE Animation */
+.logo-hover:hover {
+    transform: scale(1.1);
+    transition: transform 0.6s ease;
+}
+
+.social-scale:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+.btn-grow:hover {
+    transform: scale(1.08);
+    transition: transform 0.4s ease;
+}
+
+/* 2. COLOR FADE Animation */
+.nav-link:hover {
+    color: #A8FF35 !important;
+    transition: color 0.5s ease;
+}
+
+/* 3. BOUNCE Animation */
+.arrow-bounce:hover {
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* 4. PULSE Animation */
+.btn-pulse:hover {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 0px 30px 0px #3dc21b;
+    }
+    50% {
+        box-shadow: 0px 0px 40px 10px #3dc21b;
+    }
+    100% {
+        box-shadow: 0px 0px 30px 0px #3dc21b;
+    }
+}
+
+/* 5. SLIDE Animation */
+.slide-in-text:hover {
+    animation: slideIn 0.8s ease;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-20px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* 6. ROTATE Animation */
+.icon-rotate:hover {
+    animation: rotate 2s linear infinite;
+}
+
+.planet-rotate:hover {
+    animation: rotateSlow 4s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateSlow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* 7. FLOAT Animation */
+.image-float:hover {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* 8. GLOW Animation */
+.text-glow:hover {
+    animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0%, 100% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+}
+
+/* 9. SHAKE Animation */
+.rocket-shake:hover {
+    animation: shake 0.8s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+/* 10. TILT Animation */
+.block-tilt:hover {
+    transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+    transition: transform 0.7s ease;
+}
+
+/* 11. SOCIAL ICON HOVER */
+.social-icon:hover {
+    transform: translateY(-3px);
+    transition: transform 0.4s ease;
+}
+
+/* 12. FRAME HOVER */
+.frame-hover:hover {
+    transform: translateY(-5px);
+    background-color: #222222 !important;
+    transition: all 0.5s ease;
+}
+
+/* 13. PRICE CARD HOVER */
+.price-card-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.6s ease;
+}
+
+/* 14. FADE IN LIST ITEMS */
+.list-item-fade:hover {
+    opacity: 0.8;
+    transform: translateX(5px);
+    transition: all 0.4s ease;
+}
+
+/* 15. FOOTER ICON HOVER */
+.footer-icon-hover:hover {
+    transform: scale(1.1) translateY(-5px);
+    transition: all 0.5s ease;
+}
+
+/* 16. PRICE TITLE Animation */
+.price-title:hover {
+    animation: colorShift 3s infinite;
+}
+
+@keyframes colorShift {
+    0%, 100% {
+        color: white;
+    }
+    50% {
+        color: #A8FF35;
+    }
+}
+
+/* 17. FOOTER TITLE Animation */
+.footer-title:hover {
+    animation: bounceIn 1s;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Ensure smooth transitions for all animated elements */
+.logo-hover, .nav-link, .social-icon, .frame-hover, .social-scale, 
+.block-tilt, .price-card-hover, .footer-icon-hover, .btn-grow {
+    transition: all 0.5s ease;
+}
+
+/* === PAGE LOAD ANIMATIONS === */
+
+/* 1. Fade In Load */
+.fade-in-load {
+    animation: fadeIn 1.2s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* 2. Slide In From Left */
+.slide-in-left {
+    animation: slideInLeft 0.8s ease-out;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* 3. Slide Up Load */
+.slide-up-load {
+    animation: slideUp 1s ease-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 4. Typewriter Effect */
+.typewriter-effect {
+    overflow: hidden;
+    border-right: 3px solid #A8FF35;
+    white-space: nowrap;
+    animation: typewriter 3s steps(40) 1s both, blinkCursor 0.8s infinite;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blinkCursor {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #A8FF35;
+    }
+}
+
+/* 5. Fade In with Delay */
+.fade-in-delay {
+    animation: fadeInDelay 1.5s ease-out 0.5s both;
+}
+
+@keyframes fadeInDelay {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 6. Stagger Load for Price Cards */
+.stagger-load {
+    animation: staggerFadeIn 1s ease-out;
+}
+
+.price-frame1.stagger-load {
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+}
+
+.price-frame2.stagger-load {
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+
+.price-frame3.stagger-load {
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes staggerFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* 7. Fade In Up for Blocks */
+.fade-in-up {
+    animation: fadeInUp 1s ease-out;
+}
+
+.block1.fade-in-up {
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+}
+
+.block2.fade-in-up {
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+
+.block3.fade-in-up {
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === INFINITE ANIMATIONS === */
+
+/* 8. Infinite Bounce */
+.bounce-infinite {
+    animation: infiniteBounce 2s ease-in-out infinite;
+}
+
+@keyframes infiniteBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* 9. Infinite Float */
+.float-infinite {
+    animation: infiniteFloat 3s ease-in-out infinite;
+}
+
+@keyframes infiniteFloat {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    33% {
+        transform: translateY(-5px) rotate(2deg);
+    }
+    66% {
+        transform: translateY(3px) rotate(-2deg);
+    }
+}
+
+/* 10. Infinite Glow */
+.glow-infinite {
+    animation: infiniteGlow 2s ease-in-out infinite;
+}
+
+@keyframes infiniteGlow {
+    0%, 100% {
+        box-shadow: 0px 0px 20px 0px #3dc21b;
+    }
+    50% {
+        box-shadow: 0px 0px 30px 5px #3dc21b;
+    }
+}
+
+/* 11. Infinite Pulse */
+.pulse-infinite {
+    animation: infinitePulse 2s ease-in-out infinite;
+}
+
+@keyframes infinitePulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+}
+
+/* 12. Infinite Rotate */
+.rotate-infinite {
+    animation: infiniteRotate 4s linear infinite;
+}
+
+@keyframes infiniteRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* 13. Wave Animation */
+.wave-animation {
+    animation: wave 2s ease-in-out infinite;
+}
+
+.f-image1.wave-animation {
+    animation-delay: 0s;
+}
+
+.f-image2.wave-animation {
+    animation-delay: 0.2s;
+}
+
+.f-image3.wave-animation {
+    animation-delay: 0.4s;
+}
+
+.f-image4.wave-animation {
+    animation-delay: 0.6s;
+}
+
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    25% {
+        transform: translateY(-3px) scale(1.05);
+    }
+    50% {
+        transform: translateY(0) scale(1);
+    }
+    75% {
+        transform: translateY(-1px) scale(1.02);
+    }
+}
+
+/* 14. Subtle Background Pulse */
+.menu::before {
+    animation: backgroundPulse 8s ease-in-out infinite;
+}
+
+@keyframes backgroundPulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.95;
+    }
+}
+
+/* 15. Infinite Color Cycle */
+.price-title {
+    animation: colorCycle 6s ease-in-out infinite;
+}
+
+@keyframes colorCycle {
+    0% {
+        color: white;
+    }
+    33% {
+        color: #A8FF35;
+    }
+    66% {
+        color: #87D322;
+    }
+    100% {
+        color: white;
+    }
+}
+
+/* Ensure elements are visible before animations */
+.fade-in-load, .slide-in-left, .slide-up-load, .fade-in-delay, 
+.stagger-load, .fade-in-up {
+    opacity: 0;
+    animation-fill-mode: both;
+}
+
+/* Prevent animation on page load for reduced motion users */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
