@@ -490,9 +490,7 @@ text-decoration: none;
     filter: drop-shadow(0px 7px 8px #1D9BF0);
 }
 
-/* === ANIMATION STYLES === */
 
-/* 1. HOVER SCALE Animation */
 .logo-hover:hover {
     transform: scale(1.1);
     transition: transform 0.6s ease;
@@ -508,13 +506,11 @@ text-decoration: none;
     transition: transform 0.4s ease;
 }
 
-/* 2. COLOR FADE Animation */
 .nav-link:hover {
     color: #A8FF35 !important;
     transition: color 0.5s ease;
 }
 
-/* 3. BOUNCE Animation */
 .arrow-bounce:hover {
     animation: bounce 1s infinite;
 }
@@ -531,7 +527,6 @@ text-decoration: none;
     }
 }
 
-/* 4. PULSE Animation */
 .btn-pulse:hover {
     animation: pulse 1.5s infinite;
 }
@@ -548,7 +543,6 @@ text-decoration: none;
     }
 }
 
-/* 5. SLIDE Animation */
 .slide-in-text:hover {
     animation: slideIn 0.8s ease;
 }
@@ -564,7 +558,6 @@ text-decoration: none;
     }
 }
 
-/* 6. ROTATE Animation */
 .icon-rotate:hover {
     animation: rotate 2s linear infinite;
 }
@@ -591,7 +584,6 @@ text-decoration: none;
     }
 }
 
-/* 7. FLOAT Animation */
 .image-float:hover {
     animation: float 3s ease-in-out infinite;
 }
@@ -605,7 +597,6 @@ text-decoration: none;
     }
 }
 
-/* 8. GLOW Animation */
 .text-glow:hover {
     animation: glow 2s ease-in-out infinite;
 }
@@ -619,7 +610,6 @@ text-decoration: none;
     }
 }
 
-/* 9. SHAKE Animation */
 .rocket-shake:hover {
     animation: shake 0.8s ease-in-out;
 }
@@ -636,46 +626,39 @@ text-decoration: none;
     }
 }
 
-/* 10. TILT Animation */
 .block-tilt:hover {
     transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
     transition: transform 0.7s ease;
 }
 
-/* 11. SOCIAL ICON HOVER */
 .social-icon:hover {
     transform: translateY(-3px);
     transition: transform 0.4s ease;
 }
 
-/* 12. FRAME HOVER */
 .frame-hover:hover {
     transform: translateY(-5px);
     background-color: #222222 !important;
     transition: all 0.5s ease;
 }
 
-/* 13. PRICE CARD HOVER */
 .price-card-hover:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     transition: all 0.6s ease;
 }
 
-/* 14. FADE IN LIST ITEMS */
 .list-item-fade:hover {
     opacity: 0.8;
     transform: translateX(5px);
     transition: all 0.4s ease;
 }
 
-/* 15. FOOTER ICON HOVER */
 .footer-icon-hover:hover {
     transform: scale(1.1) translateY(-5px);
     transition: all 0.5s ease;
 }
 
-/* 16. PRICE TITLE Animation */
 .price-title:hover {
     animation: colorShift 3s infinite;
 }
@@ -689,7 +672,6 @@ text-decoration: none;
     }
 }
 
-/* 17. FOOTER TITLE Animation */
 .footer-title:hover {
     animation: bounceIn 1s;
 }
@@ -708,15 +690,12 @@ text-decoration: none;
     }
 }
 
-/* Ensure smooth transitions for all animated elements */
 .logo-hover, .nav-link, .social-icon, .frame-hover, .social-scale, 
 .block-tilt, .price-card-hover, .footer-icon-hover, .btn-grow {
     transition: all 0.5s ease;
 }
 
-/* === PAGE LOAD ANIMATIONS === */
 
-/* 1. Fade In Load */
 .fade-in-load {
     animation: fadeIn 1.2s ease-out;
 }
@@ -730,7 +709,6 @@ text-decoration: none;
     }
 }
 
-/* 2. Slide In From Left */
 .slide-in-left {
     animation: slideInLeft 0.8s ease-out;
 }
@@ -746,7 +724,6 @@ text-decoration: none;
     }
 }
 
-/* 3. Slide Up Load */
 .slide-up-load {
     animation: slideUp 1s ease-out;
 }
@@ -762,7 +739,6 @@ text-decoration: none;
     }
 }
 
-/* 4. Typewriter Effect */
 .typewriter-effect {
     overflow: hidden;
     border-right: 3px solid #A8FF35;
@@ -788,7 +764,6 @@ text-decoration: none;
     }
 }
 
-/* 5. Fade In with Delay */
 .fade-in-delay {
     animation: fadeInDelay 1.5s ease-out 0.5s both;
 }
@@ -804,7 +779,6 @@ text-decoration: none;
     }
 }
 
-/* 6. Stagger Load for Price Cards */
 .stagger-load {
     animation: staggerFadeIn 1s ease-out;
 }
@@ -835,7 +809,6 @@ text-decoration: none;
     }
 }
 
-/* 7. Fade In Up for Blocks */
 .fade-in-up {
     animation: fadeInUp 1s ease-out;
 }
@@ -866,9 +839,7 @@ text-decoration: none;
     }
 }
 
-/* === INFINITE ANIMATIONS === */
 
-/* 8. Infinite Bounce */
 .bounce-infinite {
     animation: infiniteBounce 2s ease-in-out infinite;
 }
@@ -882,7 +853,6 @@ text-decoration: none;
     }
 }
 
-/* 9. Infinite Float */
 .float-infinite {
     animation: infiniteFloat 3s ease-in-out infinite;
 }
@@ -899,7 +869,6 @@ text-decoration: none;
     }
 }
 
-/* 10. Infinite Glow */
 .glow-infinite {
     animation: infiniteGlow 2s ease-in-out infinite;
 }
@@ -913,7 +882,6 @@ text-decoration: none;
     }
 }
 
-/* 11. Infinite Pulse */
 .pulse-infinite {
     animation: infinitePulse 2s ease-in-out infinite;
 }
@@ -927,7 +895,6 @@ text-decoration: none;
     }
 }
 
-/* 12. Infinite Rotate */
 .rotate-infinite {
     animation: infiniteRotate 4s linear infinite;
 }
@@ -941,7 +908,6 @@ text-decoration: none;
     }
 }
 
-/* 13. Wave Animation */
 .wave-animation {
     animation: wave 2s ease-in-out infinite;
 }
@@ -977,7 +943,6 @@ text-decoration: none;
     }
 }
 
-/* 14. Subtle Background Pulse */
 .menu::before {
     animation: backgroundPulse 8s ease-in-out infinite;
 }
@@ -991,7 +956,6 @@ text-decoration: none;
     }
 }
 
-/* 15. Infinite Color Cycle */
 .price-title {
     animation: colorCycle 6s ease-in-out infinite;
 }
@@ -1011,14 +975,12 @@ text-decoration: none;
     }
 }
 
-/* Ensure elements are visible before animations */
 .fade-in-load, .slide-in-left, .slide-up-load, .fade-in-delay, 
 .stagger-load, .fade-in-up {
     opacity: 0;
     animation-fill-mode: both;
 }
 
-/* Prevent animation on page load for reduced motion users */
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;
