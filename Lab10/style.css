@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #87CEEB, #1E90FF);
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+#game-container {
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+canvas {
+    display: block;
+    background: linear-gradient(to bottom, #6B8C42, #8FBC8F);
+}
+
+#score {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+#lives {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+#instructions {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 18px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 400px;
+}
+
+#game-over, #level-complete {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    display: none;
+    z-index: 10;
+}
+
+button {
+    background-color: #E52521;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #FF4500;
+}

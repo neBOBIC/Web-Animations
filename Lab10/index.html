@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Obstacle Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="canvas" width="1200" height="700"></canvas>
+        <div id="score">Score: 0</div>
+        <div id="lives">Lives: 3</div>
+        <div id="instructions">
+            Use arrow keys to move Mario. Avoid obstacles and collect coins!
+            <br>Space = Jump
+        </div>
+        <div id="game-over">
+            <h2>Game Over!</h2>
+            <p id="final-score">Your score: 0</p>
+            <button id="restart-button">Play Again</button>
+        </div>
+        <div id="level-complete">
+            <h2>Level Complete!</h2>
+            <p id="level-score">Your score: 0</p>
+            <button id="next-level-button">Next Level</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
